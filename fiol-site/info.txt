@@ -1,0 +1,6 @@
+name: fi01
+bio: First In, Only Leader. TSB: 20k (04.10.2026).
+
+music: musicone.mp3 = type london
+music: musictwo.mp3 = sil2nt hill
+music: musicthree.mp3 = школа не нужна

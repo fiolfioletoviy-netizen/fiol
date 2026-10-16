@@ -1,0 +1,107 @@
+<!-- language: HTML, file: index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>anon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wallpaper">
+    <video autoplay muted loop playsinline poster="">
+      <!-- <source src="assets/wallpaper.mp4" type="video/mp4"> -->
+    </video>
+    <canvas id="rain"></canvas>
+    <div class="grain"></div>
+  </div>
+
+  <div class="app">
+
+    <aside class="left">
+      <div class="profile">
+        <div class="avatar">
+          <img class="ava ava-desktop" src="assets/pictureavatarka.png" alt="">
+          <img class="ava ava-phone"   src="assets/picturephone.png"    alt="">
+        </div>
+        <h1 id="name">anon</h1>
+        <p class="bio" id="bio">загрузка...</p>
+      </div>
+
+      <div>
+        <div class="block-title">связь</div>
+        <nav class="links">
+          <a class="link" href="https://t.me/Fi0l1" data-copy="Fi0l1">
+            <span class="ico">✈</span>
+            <span class="label">telegram</span>
+            <span class="handle">Fi0l1</span>
+          </a>
+          <a class="link" href="https://discord.com/users/fi0l1" data-copy="fi0l1">
+            <span class="ico">◈</span>
+            <span class="label">discord</span>
+            <span class="handle">fi0l1</span>
+          </a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="block-title">доп. инфа</div>
+        <nav class="links">
+          <a class="link" href="https://discord.gg/UGwNNRdzG" data-copy="https://discord.gg/UGwNNRdzG">
+            <span class="ico">◈</span>
+            <span class="label">discord канал</span>
+            <span class="handle">invite</span>
+          </a>
+          <a class="link" href="https://t.me/fiolofficialchannel" data-copy="https://t.me/fiolofficialchannel">
+            <span class="ico">✈</span>
+            <span class="label">telegram канал</span>
+            <span class="handle">fiolofficialchannel</span>
+          </a>
+          <a class="link" href="https://soundcloud.com/fiol-111111111111111111" data-copy="https://soundcloud.com/fiol-111111111111111111">
+            <span class="ico">♪</span>
+            <span class="label">soundcloud</span>
+            <span class="handle">fiol</span>
+          </a>
+          <a class="link" href="https://steamcommunity.com/profiles/76561198785546399/" data-copy="https://steamcommunity.com/profiles/76561198785546399/">
+            <span class="ico">▶</span>
+            <span class="label">steam</span>
+            <span class="handle">profile</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <section class="right">
+      <div class="player">
+        <div class="cover" id="cover"></div>
+        <div class="now">
+          <div class="label">сейчас играет</div>
+          <div class="title"  id="now-title">—</div>
+          <div class="artist hidden" id="now-artist">—</div>
+        </div>
+        <div class="controls">
+          <button class="ctrl"      id="prev" title="назад">⏮</button>
+          <button class="ctrl play" id="play" title="плей">▶</button>
+          <button class="ctrl"      id="next" title="вперёд">⏭</button>
+        </div>
+      </div>
+
+      <div class="progress">
+        <span id="cur">0:00</span>
+        <div class="bar" id="bar"><div class="fill" id="fill"></div></div>
+        <span id="dur">0:00</span>
+      </div>
+
+      <div class="tabs"><button class="tab">треки</button></div>
+      <div class="list" id="list"></div>
+    </section>
+  </div>
+
+  <div id="toast">скопировано</div>
+  <audio id="audio" preload="metadata"></audio>
+
+  <script src="music.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
